@@ -8,7 +8,7 @@ pipeline{
         }
         stage('Analysis'){
             steps{
-            sh '/opt/maven/bin/mvn clean verify sonar:sonar –Dsonar.password=admin –Dsonar.login=admin'
+            sh '/opt/maven/bin/mvn clean verify sonar:sonar'
             }
         }
         stage('Build'){
